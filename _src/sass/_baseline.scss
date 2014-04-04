@@ -405,17 +405,24 @@ ABOUT ME
 	white-space: nowrap;
 }
 
-.timeline>ul>li:nth-child(11) {// I Want to Join your Team!
-	width: 8.5rem;
-	margin-left: 4.88rem;
-	margin-top: 0.5rem;
+.timeline>ul>li:nth-child(11) {// Front-End Dev. & UX Lead at WHOOP
+  width: 7.6rem;
+  margin-right: 0.4855rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5em;
 }
 
-.timeline>ul>li:nth-child(11)>figcaption>img { // I Want to Join your Team! IMG
+.timeline>ul>li:nth-child(11)>figcaption>img { // Front-End Dev. & UX Lead at WHOOP IMG
 	position: absolute;
-	right: 37%;
-	top: 105%;
+	right: 84%;
+	top: 100%;
+}
 
+.timeline>ul>li:nth-child(11)>figcaption:before {// Front-End Dev & UX Lead at WHOOP YEAR
+	position:absolute;
+  right: 7.699rem;
+  top: 1.288rem;
+	white-space: nowrap;
 }
 
 .timeline>ul>li:first-child {
