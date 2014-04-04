@@ -4,6 +4,8 @@ plugins:     ./_src/_plugins
 layouts:     ./_src/_layouts
 timezone:    America/New_York
 
+exclude: ['sass']
+
 highlighter: pygments
 
 markdown: kramdown
