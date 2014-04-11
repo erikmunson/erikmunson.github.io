@@ -140,6 +140,31 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+figure,
+figcaption,
+article,
+aside,
+section,
+nav,
+header,
+footer {
+	// Make browsers actually _use_ metadata from OpenType files.
+	-moz-font-feature-settings:    "liga=1",  "dlig=1"   "clig=1",  "salt=1",  "kern=1";// Old FF Fallback
+	-moz-font-feature-settings:    "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+	-ms-font-feature-settings:     "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+	-o-font-feature-settings:      "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+	-webkit-font-feature-settings: "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+	font-feature-settings:         "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+}
 
 /*
 *

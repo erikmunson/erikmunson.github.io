@@ -137,6 +137,30 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+figure,
+figcaption,
+article,
+aside,
+section,
+nav,
+header,
+footer {
+  -moz-font-feature-settings: "liga=1",  "dlig=1"   "clig=1",  "salt=1",  "kern=1";
+  -moz-font-feature-settings: "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+  -ms-font-feature-settings: "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+  -o-font-feature-settings: "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+  -webkit-font-feature-settings: "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
+  font-feature-settings: "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on; }
+
 /*
 *
 *  Screen reader text (hides from view)
@@ -603,18 +627,6 @@ footer ul li [data-icon] {
 /***************************
 KERNING.JS
 ***************************/
-.experience > h3 > .char5 {
-  letter-spacing: -0.01em; }
-
-.experience > h3 > .char7, .about-me > h3 > .char2 {
-  letter-spacing: 0.05em; }
-
-.educational-background > h3 > .char5 {
-  letter-spacing: -0.09em; }
-
-.educational-background > h3 > .char1, .educational-background > h3 > .char6, .educational-background > h3 > .char7 {
-  letter-spacing: 0.05em; }
-
 /***************************
 BASIC LAYOUT
 ***************************/
@@ -682,7 +694,7 @@ article > section {
     margin-bottom: 0;
     line-height: 1em; } }
 /***************************
-$2X STYLES
+@2X STYLES
 ***************************/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   body {
