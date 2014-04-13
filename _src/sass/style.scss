@@ -2,7 +2,8 @@
 STYLE
 ***************************/
 
-@import "variables"; // LESS Variables
+@import "variables"; // Sass Variables
+@import "mixins";
 @import "boilerplate"; // Consistency Fixes, etc.
 @import "baseline"; // Baseline Type & Layout Settings
 @import "fonts"; // Fonts

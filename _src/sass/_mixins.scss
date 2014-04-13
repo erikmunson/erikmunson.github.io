@@ -1,0 +1,46 @@
+/***************************
+FONT-FACE
+***************************/
+
+// Declare a single font face block.
+
+@mixin declareFontFace($font-family,
+                       $font-filename,
+                       $font-weight:  normal,
+                       $font-style:   normal,
+                       $font-stretch: normal) {
+
+    @font-face {
+        font-family: '#{$font-family}';
+        src: url('../fonts/#{$font-filename}.eot');
+        src: url('../fonts/#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/#{$font-filename}.woff') format('woff'),
+             url('../fonts/#{$font-filename}.ttf') format('truetype'),
+             url('../fonts/#{$font-filename}.svg##{$font-family}') format('svg');
+        font-weight:  $font-weight;
+        font-style:   $font-style;
+        font-stretch: $font-stretch;
+    }
+
+}
+
+
+// Loop through a list of fonts and declare each one.
+// Accepts a list structured as in this example:
+//
+//   $font-list: (
+//       ("FontOneFamilyName", "font-one-file-name"),
+//       ("FontTwoFamilyName", "font-two-file-name")
+//   );
+//
+
+
+@mixin declareFontFaces($font-list) {
+
+    @each $font-name, $font-filename in $font-list {
+
+        @include declareFontFace($font-name, $font-filename);
+
+    }
+
+}

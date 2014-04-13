@@ -157,7 +157,7 @@ section,
 nav,
 header,
 footer {
-	// Make browsers actually _use_ metadata from OpenType files.
+	// Make browsers actually use metadata from OpenType files.
 	-moz-font-feature-settings:    "liga=1",  "dlig=1"   "clig=1",  "salt=1",  "kern=1";// Old FF Fallback
 	-moz-font-feature-settings:    "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
 	-ms-font-feature-settings:     "liga" on, "dlig" on, "clig" on, "salt" on, "kern" on;
@@ -187,7 +187,7 @@ footer {
 */
 
 [data-icon]:before {
-	font-family: "social_foundiconsregular";
+	font-family: "SocialFoundicons";
 	content: attr(data-icon);
 	speak: none; /* Not to be trusted, but hey. */
 }
