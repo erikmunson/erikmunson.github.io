@@ -17,11 +17,12 @@ body {
 	background-image: $bg_path;
 	background-size: $bg_size;
 	font-size: 1em;
-	line-height: ($line / $font-size);
+	line-height: ($line / $font-size) * 1em;
 	color: $primary_text;
 	font-family: "NeueHaasGroteskDisplayPro35ExtraLight", "Helvetica Neue", Helvetica, sans-serif;
 	float:left;//Fix for GGS.js
 	max-width: 100%;// Fix for Firefox at certain widths
+	-webkit-font-smoothing: antialiased;
 }
 
 header {
@@ -30,17 +31,17 @@ header {
 
 h1, h2 {
 	/* 26 / 36px */
-	font-size: 26 / $font-size;
-	line-height: ($line*1.5) / (26 * $font-size);
+	font-size: 26 / $font-size * 1em;
+	line-height: ($line * 1.5) / (26 * $font-size) * 1em;
 	background-repeat: no-repeat;
 	display: block;
-	text-indent : -9999em;
-	overflow : hidden;
+	text-indent: -9999em;
+	overflow: hidden;
 	font-weight: 100;
 }
 
 h1 {
-	margin: (48/26*1em) 0 (26/26*1em);
+	margin: (48 / 26 * 1em) 0 (26 / 26 * 1em);
 	background-image: $logo_bg_path;
 	background-size: $logo_bg_size;
 	background-position: center center;
@@ -51,7 +52,7 @@ h1 {
 
 h2 {
 	font-weight: normal;
-	margin: (28/26*1em) auto (56/26*1em);
+	margin: (28 / 26 * 1em) auto (56 / 26 * 1em);
 	background-image: $h2_bg_path;
 	background-size: contain;
 	background-position: center center;
@@ -66,11 +67,11 @@ h2 {
 h3 {
 	/* 36px / 24px */
 	color: $tertiary_text;
-	font-size: 42 / $font-size;
+	font-size: 42 / $font-size * 1em;
 	font-family: "OstrichSansMedium", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
-	line-height: ($line*2) / 42 * 1em;
-	margin: (2.618/$font-size) 0  ($line) / 36 * $font-size;
+	line-height: ($line * 2) / 42 * 1em;
+	margin: 2.618 / $font-size * 1em 0 ($line / 36) / $font-size * 1em;
 	letter-spacing: .03em;
 }
 
@@ -86,7 +87,7 @@ h5 {
 	font-family: "NeueHaasGroteskTextPro55Roman", "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 0.88em;
 	color: $tertiary_text;
-	line-height: ($line*2) / 32 * 1em;
+	line-height: ($line * 2) / 32 * 1em;
 	font-weight: 100;
 }
 
@@ -106,7 +107,10 @@ ul>li {
 
 article>section>ul>li>p {
 	color: $primary_text;
-	letter-spacing: 0.0618em;
+	font-family: "NeueHaasGroteskTextPro55Roman", "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13 / $font-size * 1em;
+	line-height: $line / 1.0618 / $font-size * 1em;
+	letter-spacing: 0.00618em;
 	word-spacing: 0.068em;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
 	font-weight: 100;
@@ -131,7 +135,7 @@ EXPERIENCE
 }
 
 .experience>ul>li>aside {
-	margin-top: ($line ) / 30 * 1em;
+	margin-top: ($line) / 30 * 1em;
 	line-height: ($line * 2) / 26 * 1em;
 	font-size: .8125em;
 	color: $tertiary_text;
@@ -404,10 +408,10 @@ ABOUT ME
 }
 
 .timeline>ul>li:nth-child(11) {// Front-End Dev. & UX Lead at WHOOP
-  width: 7.6rem;
-  margin-right: 0.4855rem;
-  margin-top: 0.5rem;
-  padding-bottom: 0.5em;
+	width: 7.6rem;
+	margin-right: 0.4855rem;
+	margin-top: 0.5rem;
+	padding-bottom: 0.5em;
 }
 
 .timeline>ul>li:nth-child(11)>figcaption>img { // Front-End Dev. & UX Lead at WHOOP IMG
@@ -418,8 +422,8 @@ ABOUT ME
 
 .timeline>ul>li:nth-child(11)>figcaption:before {// Front-End Dev & UX Lead at WHOOP YEAR
 	position:absolute;
-  right: 7.699rem;
-  top: 1.288rem;
+	right: 7.699rem;
+	top: 1.288rem;
 	white-space: nowrap;
 }
 
@@ -465,7 +469,7 @@ FOOTER
 ***************************/
 
 footer {
-	padding: 0 ($line)/$font-size;
+	padding: 0 ($line) / $font-size * 1em;
 	border-top: 1px solid rgba(255,255,255,0.2);
 }
 
@@ -551,16 +555,15 @@ BASIC LAYOUT
 
 
 article>section {
-	margin-bottom:  ($line*2) / 38 * 1em;
+	margin-bottom:  ($line * 2) / 38 * 1em;
 }
 
 /*
 *  Simple elastic gutters
-*  Note: box-sizing will not work in IE6-7
 */
 
 .wrapper, article, article section {
-	padding: 0 ($line/2)/$font-size;
+	padding: 0 ($line / 2) / $font-size * 1em;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
@@ -575,13 +578,13 @@ article>section {
 */
 
 .ie body {
-	width: 640/$font-size;
+	width: 640 / $font-size * 1em;
 	margin: 0 auto;
-	font-size: ($font-size + 1) / $font-size;
+	font-size: ($font-size + 1) / $font-size * 1em;
 }
 
 .ie h1 {
-	margin: (48/42*1em) 0 (24/42*1em);
+	margin: (48/42 * 1em) 0 (24/42 * 1em);
 }
 
 /* $media screen and (min-width: 480px) */
@@ -596,7 +599,7 @@ article>section {
 	}
 
 	h1 {
-		margin: (48/26*1em) 0 (24/42*1em);
+		margin: (48/26 * 1em) 0 (24/42 * 1em);
 	}
 
 	h2 {
@@ -643,12 +646,12 @@ article>section {
 
 
 @media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+only screen and (-webkit-min-device-pixel-ratio: 2      ),
+only screen and (   min--moz-device-pixel-ratio: 2      ),
+only screen and (     -o-min-device-pixel-ratio: 2/1    ),
+only screen and (        min-device-pixel-ratio: 2      ),
+only screen and (                min-resolution: 192dpi ),
+only screen and (                min-resolution: 2dppx  ) {
 
 	body {
 		background-size: $bg_size_2x;
@@ -658,7 +661,6 @@ only screen and (                min-resolution: 2dppx) {
 		letter-spacing: 0.003rem;// Hi-DPI displays tend to ignore subpixel
 		// rendering and shape hinting, so the spacing needs to be adjusted to fit the layout.
 	}
-
 
 
 }

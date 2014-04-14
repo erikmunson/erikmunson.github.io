@@ -5,11 +5,11 @@ FONTS
 /* Ostrich Sans */
 
 $ostrich-sans: (
-	  // Font Family Name          // Font Filename
-	( "OstrichSansBold",           "ostrich-bold-webfont"    ),
-	( "OstrichSansBlack",          "ostrich-black-webfont"   ),
-	( "OstrichSansMedium",         "ostrich-regular-webfont" ),
-	( "OstrichSansCondensedLight", "ostrich-light-webfont"   )
+	  // Font Family Name           // Font Filename
+	( "OstrichSansBold"           , "ostrich-bold-webfont"    ),
+	( "OstrichSansBlack"          , "ostrich-black-webfont"   ),
+	( "OstrichSansMedium"         , "ostrich-regular-webfont" ),
+	( "OstrichSansCondensedLight" , "ostrich-light-webfont"   )
 );
 
 @include declareFontFaces($ostrich-sans);
@@ -19,7 +19,7 @@ $ostrich-sans: (
 
 $neue-haas-grotesk: (
 	(
-		"NeueHaasGroteskDisplayPro35ExtraLight",   // Font Family Name
+		"NeueHaasGroteskDisplayPro35ExtraLight", // Font Family Name
 		"neuehaasgrotesk-display-35-extra-light" // Font Filename
 	),
 	(

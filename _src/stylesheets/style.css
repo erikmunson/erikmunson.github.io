@@ -202,19 +202,20 @@ body {
   background-image: url("../images/background.png");
   background-size: 476px 476px;
   font-size: 1em;
-  line-height: 1.5;
-  color: #c8c8c8;
+  line-height: 1.5em;
+  color: #a3a3a3;
   font-family: "NeueHaasGroteskDisplayPro35ExtraLight", "Helvetica Neue", Helvetica, sans-serif;
   float: left;
-  max-width: 100%; }
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased; }
 
 header {
   margin: 0 5.55556%; }
 
 h1, h2 {
   /* 26 / 36px */
-  font-size: 1.625;
-  line-height: 0.08654;
+  font-size: 1.625em;
+  line-height: 0.08654em;
   background-repeat: no-repeat;
   display: block;
   text-indent: -9999em;
@@ -246,11 +247,11 @@ h2 {
 h3 {
   /* 36px / 24px */
   color: gray;
-  font-size: 2.625;
+  font-size: 2.625em;
   font-family: "OstrichSansMedium", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 100;
   line-height: 1.14286em;
-  margin: 0.16363 0 10.66667;
+  margin: 0.16363em 0 0.04167em;
   letter-spacing: .03em; }
 
 h4 {
@@ -269,7 +270,7 @@ h6 {
   font-family: "OstrichSansMedium", "Helvetica Neue", Helvetica, sans-serif;
   display: inline;
   font-size: 1.1em;
-  color: #c8c8c8;
+  color: #a3a3a3;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-weight: 100; }
@@ -278,8 +279,11 @@ ul > li {
   list-style: none; }
 
 article > section > ul > li > p {
-  color: #c8c8c8;
-  letter-spacing: 0.0618em;
+  color: #a3a3a3;
+  font-family: "NeueHaasGroteskTextPro55Roman", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8125em;
+  line-height: 1.4127em;
+  letter-spacing: 0.00618em;
   word-spacing: 0.068em;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
   font-weight: 100; }
@@ -575,7 +579,7 @@ EDUCATIONAL BACKGROUND
 FOOTER
 ***************************/
 footer {
-  padding: 0 1.5;
+  padding: 0 1.5em;
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 footer > ul {
@@ -586,11 +590,11 @@ footer > ul {
 
 footer a {
   text-decoration: none;
-  color: #c8c8c8; }
+  color: #a3a3a3; }
 
 footer a:hover {
   text-decoration: underline;
-  color: #c8c8c8; }
+  color: #a3a3a3; }
 
 footer h5 {
   display: inline;
@@ -636,10 +640,9 @@ article > section {
 
 /*
 *  Simple elastic gutters
-*  Note: box-sizing will not work in IE6-7
 */
 .wrapper, article, article section {
-  padding: 0 0.75;
+  padding: 0 0.75em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -651,9 +654,9 @@ article > section {
 *
 */
 .ie body {
-  width: 40;
+  width: 40em;
   margin: 0 auto;
-  font-size: 1.0625; }
+  font-size: 1.0625em; }
 
 .ie h1 {
   margin: 1.14286em 0 0.57143em; }
