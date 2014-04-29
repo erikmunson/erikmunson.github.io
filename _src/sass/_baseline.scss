@@ -87,7 +87,7 @@ h5 {
 	font-family: "NeueHaasGroteskTextPro55Roman", "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 0.88em;
 	color: $tertiary_text;
-	line-height: ($line * 2) / 32 * 1em;
+	line-height: ($line) / 14 * 1em;
 	font-weight: 100;
 }
 
@@ -127,11 +127,11 @@ EXPERIENCE
 }
 
 .experience>h3 {
-	margin-bottom: ($line) / 46 * 1em;
+	margin-bottom: ($line * .618) / 42 * 1em;
 }
 
 .experience>ul>li>h4 {
-	margin-bottom: ($line * .1) / 46 * 1em;
+	margin-bottom: ($line * .0618) / 20 * 1em;
 }
 
 .experience>ul>li>aside {
