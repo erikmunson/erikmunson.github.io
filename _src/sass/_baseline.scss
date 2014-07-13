@@ -152,9 +152,9 @@ SKILLS
 ***************************/
 
 .skills>ul>li>h5>span {
-	font-family: "OstrichSansBold", "Helvetica Neue", Helvetica, sans-serif;
+	font-family: "NeueHaasGroteskTextPro75Bold", "Helvetica Neue", Helvetica, sans-serif;
 	letter-spacing: 0.25em;
-	font-size: .9em;
+	vertical-align: text-bottom;
 }
 
 .skills>ul>li {
@@ -169,10 +169,11 @@ SKILLS
 }
 
 .skills>ul>li>h5 {
-	font-size: .8em;
+	font-size: 11 / $font-size * 1em;
 	margin-bottom: 0;
-	line-height: .67em;
+	line-height: $line / 1.0618 / $font-size * 1em;;
 	color: $quaternary_text;
+	text-transform: uppercase;
 }
 
 .skills>figure {

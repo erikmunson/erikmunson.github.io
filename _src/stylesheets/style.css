@@ -202,7 +202,7 @@ body {
   background-image: url("../images/background.png");
   background-size: 476px 476px;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.375em;
   color: #a3a3a3;
   font-family: "NeueHaasGroteskDisplayPro35ExtraLight", "Helvetica Neue", Helvetica, sans-serif;
   float: left;
@@ -215,7 +215,7 @@ header {
 h1, h2 {
   /* 26 / 36px */
   font-size: 1.625em;
-  line-height: 0.08654em;
+  line-height: 0.07933em;
   background-repeat: no-repeat;
   display: block;
   text-indent: -9999em;
@@ -250,8 +250,8 @@ h3 {
   font-size: 2.625em;
   font-family: "OstrichSansMedium", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 100;
-  line-height: 1.14286em;
-  margin: 0.16363em 0 0.04167em;
+  line-height: 1.04762em;
+  margin: 0.16363em 0 0.03819em;
   letter-spacing: .03em; }
 
 h4 {
@@ -263,7 +263,7 @@ h5 {
   font-family: "NeueHaasGroteskTextPro55Roman", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.88em;
   color: gray;
-  line-height: 1.5em;
+  line-height: 1.57143em;
   font-weight: 100; }
 
 h6 {
@@ -282,7 +282,7 @@ article > section > ul > li > p {
   color: #a3a3a3;
   font-family: "NeueHaasGroteskTextPro55Roman", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.8125em;
-  line-height: 1.4127em;
+  line-height: 1.29497em;
   letter-spacing: 0.00618em;
   word-spacing: 0.068em;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
@@ -292,32 +292,32 @@ article > section > ul > li > p {
 EXPERIENCE
 ***************************/
 .experience > ul > li {
-  margin-bottom: 1.92em; }
+  margin-bottom: 1.76em; }
 
 .experience > h3 {
-  margin-bottom: 0.52174em; }
+  margin-bottom: 0.32371em; }
 
 .experience > ul > li > h4 {
-  margin-bottom: 0.05217em; }
+  margin-bottom: 0.06798em; }
 
 .experience > ul > li > aside {
-  margin-top: 0.8em;
-  line-height: 1.84615em;
+  margin-top: 0.73333em;
+  line-height: 1.69231em;
   font-size: .8125em;
   color: gray;
   letter-spacing: 0.07em;
   text-shadow: 0px 1px 1px black; }
 
 .experience > ul > li > p {
-  margin-top: 0.075em; }
+  margin-top: 0.06875em; }
 
 /***************************
 SKILLS
 ***************************/
 .skills > ul > li > h5 > span {
-  font-family: "OstrichSansBold", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "NeueHaasGroteskTextPro75Bold", "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: 0.25em;
-  font-size: .9em; }
+  vertical-align: text-bottom; }
 
 .skills > ul > li {
   float: left;
@@ -329,10 +329,11 @@ SKILLS
   margin-bottom: 0; }
 
 .skills > ul > li > h5 {
-  font-size: .8em;
+  font-size: 0.6875em;
   margin-bottom: 0;
-  line-height: .67em;
-  color: #8c8c8c; }
+  line-height: 1.29497em;
+  color: #666666;
+  text-transform: uppercase; }
 
 .skills > figure {
   display: block;
@@ -353,10 +354,10 @@ ABOUT ME
 
 .about-me > figure {
   width: 50%;
-  margin: 0 auto 1.44rem; }
+  margin: 0 auto 1.32rem; }
 
 .about-me > p {
-  margin-bottom: 1.44rem; }
+  margin-bottom: 1.32rem; }
 
 /* Timeline */
 .about-me > .timeline {
@@ -565,8 +566,8 @@ ABOUT ME
 EDUCATIONAL BACKGROUND
 ***************************/
 .educational-background > ul > li {
-  margin-top: 0.8em;
-  line-height: 1.84615em;
+  margin-top: 0.73333em;
+  line-height: 1.69231em;
   font-size: .8125em;
   color: #bebebe;
   letter-spacing: 0.07em;
@@ -579,7 +580,7 @@ EDUCATIONAL BACKGROUND
 FOOTER
 ***************************/
 footer {
-  padding: 0 1.5em;
+  padding: 0 1.375em;
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 footer > ul {
@@ -636,13 +637,13 @@ KERNING.JS
 BASIC LAYOUT
 ***************************/
 article > section {
-  margin-bottom: 1.26316em; }
+  margin-bottom: 1.15789em; }
 
 /*
 *  Simple elastic gutters
 */
-.wrapper, article, article section {
-  padding: 0 0.75em;
+.wrapper, article {
+  padding: 0 5.55556%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -996,7 +997,7 @@ FONTS
 
   h3 {
     font-size: 3.54375em;
-    color: #8c8c8c; }
+    color: #666666; }
 
   article > section > ul > li > p, .about-me > p, .educational-background > p {
     letter-spacing: 0.01em; }
