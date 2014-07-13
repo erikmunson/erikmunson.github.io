@@ -563,8 +563,8 @@ article>section {
 *  Simple elastic gutters
 */
 
-.wrapper, article, article section {
-	padding: 0 ($line / 2) / $font-size * 1em;
+.wrapper, article {
+	padding: 0 $column;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
