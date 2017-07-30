@@ -1,0 +1,503 @@
+/*
+*
+*  Fonts
+*
+*/
+@font-face {
+	font-family: 'NHaasGroteskTXPro-56It';
+	src: url('fonts/NHaasGroteskTXPro-56It.woff2') format('woff2'),
+		url('fonts/NHaasGroteskTXPro-56It.woff') format('woff'),
+		url('fonts/NHaasGroteskTXPro-56It.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NHaasGroteskTXPro-66MdIt';
+	src: url('fonts/NHaasGroteskTXPro-66MdIt.woff2') format('woff2'),
+		url('fonts/NHaasGroteskTXPro-66MdIt.woff') format('woff'),
+		url('fonts/NHaasGroteskTXPro-66MdIt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NHaasGroteskDSPro-96BlkIt';
+	src: url('fonts/NHaasGroteskDSPro-96BlkIt.woff2') format('woff2'),
+		url('fonts/NHaasGroteskDSPro-96BlkIt.woff') format('woff'),
+		url('fonts/NHaasGroteskDSPro-96BlkIt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EMIcons';
+	src: url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*
+*
+*  Resets
+*
+*/
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/*
+*
+*  Consistency fixes
+*  from http://necolas.github.com/normalize.css/
+*
+*/
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section, audio, canvas, video {
+  display: block;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+input, textarea, button, select {
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea {
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+*
+*  Simple fluid media
+*
+*/
+figure {
+  position: relative;
+}
+
+figure img, figure object, figure embed, figure video {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+
+/***************************
+BASELINE
+***************************/
+
+body {
+  /* 16px / 24px */
+  background-image: url("images/background.png");
+  background-size: 476px 476px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #a8a8a8;
+  font-family: "NHaasGroteskTXPro-66MdIt", "Helvetica Neue", Helvetica, sans-serif;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  font-variant-ligatures: normal;
+}
+
+.icon {
+  font-family: 'EMIcons';
+}
+
+header, main {
+  margin: 0 5.55556%;
+}
+
+h1 {
+  /* 26 / 36px */
+  font-size: 1.625em;
+  line-height: 0.08654em;
+  text-indent: -9999em;
+  font-weight: 100;
+  background-image: url("images/logo.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 1.84615em 0 1em;
+  height: 0;
+  width: 100%;
+  padding-bottom: 19.619%;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 0.9em;
+  font-family: "NHaasGroteskTXPro-56It", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  font-family: "NHaasGroteskDSPro-96BlkIt", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: #bfbfbf;
+  margin-bottom: .75em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  -webkit-transition: opacity 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -moz-transition: opacity 250ms ease-in-out, -moz-transform 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+a:hover, a:focus, a:active {
+  outline: none;
+  opacity: 1;
+}
+
+p {
+  font-size: 1em;
+}
+
+main > section {
+  margin-bottom: 1.26316em;
+}
+
+/*
+*  Simple elastic gutters
+*/
+/*main, main > section {
+  padding: 0 0.75em;
+}*/
+
+main > section:first-child {
+  margin-top: 1.4em;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.summary {
+  font-size: 1.1em;
+}
+
+.work > ul, .find-me > ul {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+.work > ul > li,
+.find-me > ul > li {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.work > ul > li > .icon,
+.find-me > ul > li > .icon {
+  font-size: 3em;
+  flex-grow: 1;
+}
+
+.work > ul > li > .icon:hover,
+.find-me > ul > li > .icon:hover,
+.work > ul > li > .icon:focus,
+.find-me > ul > li > .icon:focus,
+.work > ul > li > .icon:active,
+.find-me > ul > li > .icon:active {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/***************************
+2X STYLES
+***************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2 / 1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+
+  body {
+    background-size: 238px 238px;
+  }
+}
+
+
+/***************************
+480px
+***************************/
+@media screen and (min-width: 30em) {
+  h1 {
+    margin: 1.84615em 0 1.84615em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  main > section {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  main > section:first-child {
+    margin-top: 4em;
+    margin-top: 2.2em;
+  }
+
+  main > section:last-child {
+    margin-bottom: 3.263158em;
+  }
+}
+
+
+/***************************
+755px
+***************************/
+@media screen and (min-width: 47.187em) {
+  header, main {
+    margin: 0 17.25%;
+  }
+
+  header {
+    margin-top: 8%;
+  }
+
+  main > section {
+    margin-bottom: 4.2em;
+  }
+}
+
+
+/***************************
+912px
+***************************/
+@media screen and (min-width: 57em) {
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 1.2em;
+  }
+
+  .work, .find-me {
+    padding: 0 5.555%;
+  }
+}
+
+
+/***************************
+1088px
+***************************/
+@media screen and (min-width: 68em) {
+  :root {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.0625em;
+  }
+
+  main > section {
+    margin-bottom: 4.2em;
+  }
+
+  main > section:first-child {
+    margin-top: 3em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+}
+
+
+/***************************
+1350px
+***************************/
+@media screen and (min-width: 78em) {
+  h3 {
+    font-size: 1.8em;
+  }
+
+  main > section {
+    margin-bottom: 4.8em;
+  }
+
+  .work, .find-me {
+    padding: 0 12%;
+  }
+
+  .work > ul > li > .icon,
+  .find-me > ul > li > .icon {
+    font-size: 3.5em;
+  }
+}
+
+
+/***************************
+1550px
+***************************/
+@media screen and (min-width: 96.87em) {
+  h2 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.6em;
+  }
+
+  .summary {
+    padding: 0 12%;
+  }
+}
+
+/***************************
+1730px
+***************************/
+@media screen and (min-width: 108em) {
+  body {
+    position: relative;
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+
+/***************************
+1950px
+***************************/
+@media screen and (min-width: 121.8em) {
+  body {
+    max-width: 125em;
+  }
+}
