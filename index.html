@@ -12,9 +12,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="preload" href="images/background.png" as="image">
+    <link rel="preload" href="images/logo.png" as="image">
 
-    <script src="js/widowtamer-min.js"></script>
+    <style>
+      /*
+      *
+      *  Fonts
+      *
+      */
+      @font-face {
+      	font-family: 'NHaasGroteskTXPro-56It';
+      	src: url('fonts/NHaasGroteskTXPro-56It.woff2') format('woff2'),
+      		url('fonts/NHaasGroteskTXPro-56It.woff') format('woff'),
+      		url('fonts/NHaasGroteskTXPro-56It.ttf') format('truetype');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+
+      @font-face {
+      	font-family: 'NHaasGroteskTXPro-66MdIt';
+      	src: url('fonts/NHaasGroteskTXPro-66MdIt.woff2') format('woff2'),
+      		url('fonts/NHaasGroteskTXPro-66MdIt.woff') format('woff'),
+      		url('fonts/NHaasGroteskTXPro-66MdIt.ttf') format('truetype');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+
+      @font-face {
+      	font-family: 'NHaasGroteskDSPro-96BlkIt';
+      	src: url('fonts/NHaasGroteskDSPro-96BlkIt.woff2') format('woff2'),
+      		url('fonts/NHaasGroteskDSPro-96BlkIt.woff') format('woff'),
+      		url('fonts/NHaasGroteskDSPro-96BlkIt.ttf') format('truetype');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+
+      @font-face {
+      	font-family: 'EMIcons';
+      	src: url('fonts/icomoon.woff') format('woff'),
+      		url('fonts/icomoon.ttf') format('truetype');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+
+
+      /*
+      *
+      *  Resets
+      *
+      */
+      body,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      th,
+      td,
+      article,
+      aside,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      main,
+      nav,
+      section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+
+      /*
+      *
+      *  Consistency fixes
+      *  from http://necolas.github.com/normalize.css/
+      *
+      */
+      html {
+        height: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        font-size: 100%;
+      }
+
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, nav, section, audio, canvas, video {
+        display: block;
+      }
+
+      /***************************
+      BASELINE
+      ***************************/
+
+      body {
+        /* 16px / 24px */
+        background-image: url("images/background.png");
+        background-size: 476px 476px;
+        font-size: 1em;
+        line-height: 1.5;
+        color: #a8a8a8;
+        font-family: "NHaasGroteskTXPro-66MdIt", "Helvetica Neue", Helvetica, sans-serif;
+        max-width: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-feature-settings: "liga";
+        -moz-font-feature-settings: "liga";
+        font-feature-settings: "liga";
+        font-variant-ligatures: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css"/>
+    <script async src="js/widowtamer.js"></script>
   </head>
 
   <body>
@@ -72,14 +209,5 @@
         </ul>
       </section>
     </main>
-
-    <script>
-      wt.fix({
-        elements: 'p',
-        chars: 20,
-        method: 'nbsp',
-        event: 'resize'
-      });
-    </script>
   </body>
 </html>
